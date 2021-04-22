@@ -14,7 +14,7 @@ class UI(QMainWindow):
             q_im = cv2.resize(cv2.cvtColor((im), cv2.COLOR_BGR2RGB), (500,500), interpolation = cv2.INTER_NEAREST)
             self.label.setPixmap( QPixmap(QImage(q_im.data, 500, 500, 500*3,  QImage.Format_RGB888))  )
         self.pushButton.clicked.connect(moresteck)
-
+ #ziemniak
         self.show()
         app.setStyle('fusion')
 
